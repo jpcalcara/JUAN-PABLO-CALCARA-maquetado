@@ -1,64 +1,110 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" href="../TEST/css/style.css">
-    <link rel="stylesheet" href="../TEST/css/style_products.css">
-    <title>TEST MAQUETADOR</title>
-  </head>
-  <body>
-    <div class="container">
-        <img src="../TEST/images/banners-14.jpg" id="img1"  width="300" height="150">
-        <img src="../TEST/images/banners-13.jpg" id="img2"  width="300" height="150">
-        <img src="../TEST/images/banners-12.jpg" id="img3" width="300" height="150">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>TEST-FRONT END</title>
+    <link rel="icon" type="image/png" href="../TEST_VV/images/ico.png">
+    <link rel="stylesheet" href="../TEST_VV/css/style.css">
+</head>
+<body>
+    <div class="images">
+        <div class="img-container">
+            <img src="../TEST_VV/images/banners-14.jpg" alt="decks" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="../TEST_VV/images/banners-13.jpg" alt="zocalos" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="../TEST_VV/images/banners-12.jpg" alt="perfilplas" style="width:100%">
+        </div>
     </div>
     <div>
         <p id="bannerOFF">CONSTRUCCION EN SECO <b>HASTA 50% OFF</b></p>
     </div>
-    <div class="container2">
-        <div class="container_intern">
-        <div class="imagen_left">
-            <img src="../TEST/images/perfilplas.jpg" alt="perfilplas">
-        </div>
-        <div class="imagen">
-            <img src="../TEST/images/producto.jpg" alt="perfil1" id="img1">
-            <p><b>PERFIL CONSTRUCCION SECO</b></p>
-            <p><b>MONTANTE 34 GALVANIZADO</b></p>
-            <p><b>0.52MM X 34MM X 2600MM</b></p>
-        </div>
-        <div class="overlay">
-            <div class="cantidad">
-                <label for="cantidad" id="lcant">Cant.</label>
-                <input type="number"  id="icant" min="1" max="10" value="1">
+<div class="products">
+    <div class="img-product1">
+        <img src="../TEST_VV/images/perfilplas.jpg" alt="perfilplas" style="width:100%">
+    </div>
+    <div class="img-product">
+        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
+        <div class="p">
+            <p>PERFIL CONSTRUCCION SECO</p>
+            <p>MONTANTE 34 GALVANIZADO</p>
+            <p>0.52MM X 34MM X 2600MM</p>
+            <div class="pp">
+                <p><a id="precio">$0,00</a> + IVA</p>
+                <p id="iva">$0,00 (IVA included)</p>
             </div>
+        </div>
+        <div class="container_count">
             <div>
-                <button id="btnPres"><b>AGREGAR AL PRESUPUESTO</b></button>
+                <label id="cantidad">Cant.</label>
+                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
+            </div>
+            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
+        </div>
+    </div>
+    <div class="img-product">
+        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
+        <div class="p">
+            <p>PERFIL CONSTRUCCION SECO</p>
+            <p>MONTANTE 34 GALVANIZADO</p>
+            <p>0.52MM X 34MM X 2600MM</p>
+            <div class="pp">
+                <p><a id="precio">$0,00</a> + IVA</p>
+                <p id="iva">$0,00 (IVA included)</p>
             </div>
         </div>
-        <div class="imagen">
-            <img src="../TEST/images/producto.jpg" alt="perfil2" id="img2">
-            <p><b>PERFIL CONSTRUCCION SECO</b></p>
-            <p><b>MONTANTE 34 GALVANIZADO</b></p>
-            <p><b>0.52MM X 34MM X 2600MM</b></p>
-        </div>
-        <div class="imagen">
-            <img src="../TEST/images/producto.jpg" alt="perfil3" id="img3">
-            <p><b>PERFIL CONSTRUCCION SECO</b></p>
-            <p><b>MONTANTE 34 GALVANIZADO</b></p>
-            <p><b>0.52MM X 34MM X 2600MM</b></p>
-        </div>
-        <div class="imagen">
-            <img src="../TEST/images/producto.jpg" alt="perfil3" id="img3">
-            <p><b>PERFIL CONSTRUCCION SECO</b></p>
-            <p><b>MONTANTE 34 GALVANIZADO</b></p>
-            <p><b>0.52MM X 34MM X 2600MM</b></p>
+        <div class="container_count">
+            <div>
+                <label id="cantidad">Cant.</label>
+                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
+            </div>
+            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>
         </div>
     </div>
+    <div class="img-product">
+        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
+        <div class="p">
+            <p>PERFIL CONSTRUCCION SECO</p>
+            <p>MONTANTE 34 GALVANIZADO</p>
+            <p>0.52MM X 34MM X 2600MM</p>
+            <div class="pp">
+                <p><a id="precio">$0,00</a> + IVA</p>
+                <p id="iva">$0,00 (IVA included)</p>
+            </div>
+        </div>
+        <div class="container_count">
+            <div>
+                <label id="cantidad">Cant.</label>
+                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
+            </div>
+            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-  </body>
+    <div class="img-product">
+        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
+        <div class="p">
+            <p>PERFIL CONSTRUCCION SECO</p>
+            <p>MONTANTE 34 GALVANIZADO</p>
+            <p>0.52MM X 34MM X 2600MM</p>
+            <div class="pp">
+                <p><a id="precio">$0,00</a> + IVA</p>
+                <p id="iva">$0,00 (IVA included)</p>
+            </div>
+        </div>
+        <div class="container_count">
+            <div>
+                <label id="cantidad">Cant.</label>
+                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
+            </div>
+            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
+        </div>
+    </div>
+</div>
+</body>
 </html>
