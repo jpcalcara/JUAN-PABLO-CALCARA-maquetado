@@ -1,110 +1,272 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>TEST-FRONT END</title>
-    <link rel="icon" type="image/png" href="../TEST_VV/images/ico.png">
-    <link rel="stylesheet" href="../TEST_VV/css/style.css">
-</head>
-<body>
-    <div class="images">
-        <div class="img-container">
-            <img src="../TEST_VV/images/banners-14.jpg" alt="decks" style="width:100%">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../JUAN-PABLO-CALCARA-maquetado/css/style.css">
+    <link rel="icon" type="image/png" href="../JUAN-PABLO-CALCARA-maquetado/images/icono.png" />
+    <title>TEST FRONT-END</title>
+  </head>
+  <body>
+<div class="container">
+    <div class="row">
+        <!-- IMAGENES DE CABEZERA -->
+        <div class="col-lg-4 col-md-4 col-sm-12 box-img-cabecera">
+            <img src="images/banners-14.jpg">
         </div>
-        <div class="img-container">
-            <img src="../TEST_VV/images/banners-13.jpg" alt="zocalos" style="width:100%">
+        <div class="col-lg-4 col-md-4 col-sm-12 box-img-cabecera">
+            <img src="images/banners-13.jpg" id="img1"  width="300" height="150">
         </div>
-        <div class="img-container">
-            <img src="../TEST_VV/images/banners-12.jpg" alt="perfilplas" style="width:100%">
+        <div class="col-lg-4 col-md-4 col-sm-12 box-img-cabecera">
+            <img src="images/banners-12.jpg">
         </div>
-    </div>
-    <div>
-        <p id="bannerOFF">CONSTRUCCION EN SECO <b>HASTA 50% OFF</b></p>
-    </div>
-<div class="products">
-    <div class="img-product1">
-        <img src="../TEST_VV/images/perfilplas.jpg" alt="perfilplas" style="width:100%">
-    </div>
-    <div class="img-product">
-        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
-        <div class="p">
-            <p>PERFIL CONSTRUCCION SECO</p>
-            <p>MONTANTE 34 GALVANIZADO</p>
-            <p>0.52MM X 34MM X 2600MM</p>
-            <div class="pp">
-                <p><a id="precio">$0,00</a> + IVA</p>
-                <p id="iva">$0,00 (IVA included)</p>
-            </div>
+        <!-- TEXTO PRINCIPAL -->
+        <div class="col-4 box-titulo">
+            <p class="ext"></p>
         </div>
-        <div class="container_count">
-            <div>
-                <label id="cantidad">Cant.</label>
-                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
-            </div>
-            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
+        <div class="col-4 box-titulo">
+            <p class="titulo">CONSTRUCCION EN SECO <b>HASTA 50% OFF</b></p>
         </div>
-    </div>
-    <div class="img-product">
-        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
-        <div class="p">
-            <p>PERFIL CONSTRUCCION SECO</p>
-            <p>MONTANTE 34 GALVANIZADO</p>
-            <p>0.52MM X 34MM X 2600MM</p>
-            <div class="pp">
-                <p><a id="precio">$0,00</a> + IVA</p>
-                <p id="iva">$0,00 (IVA included)</p>
-            </div>
+        <div class="col-4 box-titulo">
+            <p class="ext"></p>
         </div>
-        <div class="container_count">
-            <div>
-                <label id="cantidad">Cant.</label>
-                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
-            </div>
-            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>
+        <!-- IMAGEN DE PERFILPLAS -->
+        <div class="col-lg-3 col-sm-12 box-banner">
+            <img src="images/perfilplas.jpg" alt="perfilplas">
         </div>
-    </div>
-    <div class="img-product">
-        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
-        <div class="p">
-            <p>PERFIL CONSTRUCCION SECO</p>
-            <p>MONTANTE 34 GALVANIZADO</p>
-            <p>0.52MM X 34MM X 2600MM</p>
-            <div class="pp">
-                <p><a id="precio">$0,00</a> + IVA</p>
-                <p id="iva">$0,00 (IVA included)</p>
-            </div>
-        </div>
-        <div class="container_count">
-            <div>
-                <label id="cantidad">Cant.</label>
-                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
-            </div>
-            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
-        </div>
-    </div>
-    <div class="img-product">
-        <img src="../TEST_VV/images/producto.jpg" alt="Avatar" class="image">
-        <div class="p">
-            <p>PERFIL CONSTRUCCION SECO</p>
-            <p>MONTANTE 34 GALVANIZADO</p>
-            <p>0.52MM X 34MM X 2600MM</p>
-            <div class="pp">
-                <p><a id="precio">$0,00</a> + IVA</p>
-                <p id="iva">$0,00 (IVA included)</p>
-            </div>
-        </div>
-        <div class="container_count">
-            <div>
-                <label id="cantidad">Cant.</label>
-                <input type="number" name="contador" id="contador" min="1" max="10" value="1">
-            </div>
-            <button type="button" class="btn-btn-danger" id="boton">AGREGAR AL <br>PRESUPUESTO</button>  
-        </div>
+        <!-- CONTEDOR DELSLIDER -->
+            <div id="carouselExampleIndicators" class="col-lg-9 col-sm-12 carousel box-slider slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+
+                    <!-- PAGINA 1 DEL CARRUSEL CONTIENE 4 ITEMS -->
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <div class="col-xs-6 col-sm-3 col-6">
+                              <div class="box-articulo">
+                                  <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                  <p class="texto-articulo">PERFIL CONSTRUCCION SECO</p>
+                                  <p class="texto-articulo">MONTANTE 34 GALVANIZADO</p>
+                                  <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                  <div class="overlay">
+                                    <div class="cantidad">
+                                        <label for="cantidad" id="lcant">Cant.</label>
+                                        <input type="number"  id="icant" min="1" max="10" value="1">
+                                    </div>
+                                    <div class="contendor-boton">
+                                        <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+                  </div>
+
+                    <!-- PAGINA 2 DEL CARRUSEL CONTIENE 4 ITEMS -->
+                  <div class="carousel-item ">
+                      <div class="row">
+                          <div class="col-xs-6 col-sm-3 col-6">
+                              <div class="box-articulo">
+                                  <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                  <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                  <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                  <div class="overlay">
+                                    <div class="cantidad">
+                                        <label for="cantidad" id="lcant">Cant.</label>
+                                        <input type="number"  id="icant" min="1" max="10" value="1">
+                                    </div>
+                                    <div class="contendor-boton">
+                                        <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+                  </div>
+
+                    <!-- PAGINA 3 DEL CARRUSEL CONTIENE 4 ITEMS -->
+                  <div class="carousel-item ">
+                      <div class="row">
+                          <div class="col-xs-6 col-sm-3 col-6">
+                              <div class="box-articulo">
+                                  <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                  <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                  <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                  <div class="overlay">
+                                    <div class="cantidad">
+                                        <label for="cantidad" id="lcant">Cant.</label>
+                                        <input type="number"  id="icant" min="1" max="10" value="1">
+                                    </div>
+                                    <div class="contendor-boton">
+                                        <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-6">
+                            <div class="box-articulo">
+                                <img src="images/producto.jpg" alt="perfil1" class="img-articulo">
+                                <p class="texto-articulo">PERFIL CONSTRUCCION SECO MONTANTE 34 GALVANIZADO</p>
+                                <p class="texto-articulo">0.52MM X 34MM X 2600MM</p>
+                                <div class="overlay">
+                                  <div class="cantidad">
+                                      <label for="cantidad" id="lcant">Cant.</label>
+                                      <input type="number"  id="icant" min="1" max="10" value="1">
+                                  </div>
+                                  <div class="contendor-boton">
+                                      <button id="btnPres">AGREGAR AL PRESUPUESTO</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+                  </div>
+
+                </div>
+
+              </div>
+
     </div>
 </div>
-</body>
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
 </html>
