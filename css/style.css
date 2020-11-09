@@ -1,90 +1,91 @@
-* {box-sizing: border-box;}
-
-.img-product::after {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  content: "";
-  clear: both;
-  display: table;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.container_count {
-  position: relative; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-  float: center;
+.box-img-cabecera img{
+    height: 180px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
 }
-.products{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-left: 50px;
+.titulo{
+    background-color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 80px;
 }
-.img-product:hover .container_count {
-  opacity: 1;
+.box-banner img{
+    height: 3auto;
+    width: 100%;
 }
-.btn-btn-danger{
+.box-slider{
+    background-color: rgb(254, 255, 248);
+    padding: 10px;
+}
+.box-articulo{
+    border: 1px solid transparent;
+    transition: border .5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.box-articulo:hover{
+    border: 1px solid grey;
+    transition: border .5s
+}
+.overlay{
+    transition: opacity .3s;
+    opacity: 0;
+}
+.box-articulo:hover .overlay{
+    transition: opacity .3s;
+ opacity: 1;
+}
+.box-articulo img{
+    width: 100%;
+}
+.box-articulo button{
+    border-style: none;
     background-color: red;
-    padding:10px;
     color: white;
-    font-size: 14px;
-    font-size: 10px;
+    line-height: 18px;
+    border-radius: 5px;
+    margin: 7px;
+    padding: 6px;
     text-align: center;
-    margin-top: 10px;
-    border-radius: 1px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
-.images{
+.box-articulo .contendor-boton{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: auto;
+    justify-content: center;
 }
-.img-container {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-  }
-  #bannerOFF{
-    background-color:rgb(233, 236, 10);
+.carousel-indicators{
+    bottom: -25px
+}
+.carousel-indicators li{
+    background-color: black;
+}
+.texto-articulo{
+    margin-bottom: 0;
     text-align: center;
-    font-size: 14px;
-    margin-top: 100px;
-    margin-left: 470px;
-    margin-right: 470px;
-    margin-bottom: -90px;
-    padding-top:6px;
-    padding-bottom:6px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 10px;
 }
-.p{
-  text-align: center;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 2px;
-  padding-top: 20px;
+/* ESTILO OVERLAY */
+.cantidad{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 5px 0;
+    margin: 13px;
+    border: 1px solid grey;
 }
-#precio{
-  font-size: 20px;
-  font-weight: bold;
+.cantidad label{
+    color: black;
+    padding-top: 8px;
 }
-#iva{
-  color: gray;
-  padding-top: 1px;
-  font-size: 12px;
+
+.cantidad input{
+text-align: center;
+border: none;
+-webkit-appearance: none; 
+ -moz-appearance:textfield;
 }
